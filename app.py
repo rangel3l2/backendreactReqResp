@@ -2,10 +2,10 @@ from flask import Flask,request, redirect
 import base64
 import datetime
 from json import *
-from flask_cors import CORS , cross_origin
+
 
 app = Flask(__name__)
-CORS(app)
+
 
 @app.errorhandler(404)
 def page_not_found(e):
