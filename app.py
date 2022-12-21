@@ -17,7 +17,7 @@ def page_not_found(e):
 
 def home():
     
-    return redirect('/message')
+    return '<h2>Olá mundo<h2/>'
 
 @app.route('/message', methods = ['GET', 'POST'])
 def messageHandler(listaFile = []):
